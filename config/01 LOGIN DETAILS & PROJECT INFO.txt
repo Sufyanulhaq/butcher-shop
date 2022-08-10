@@ -1,0 +1,14 @@
+**Database Name: ecommerce**
+
+**Developed by Sufyan_Ulhaq**
+
+
+
+
+**Admin Login Details**
+
+Email:    admin@gmail.com
+Password: admin123
+
+**Project Folder should not be changed from "Ecommerce-app-h" to others
+without making changes in the code**
