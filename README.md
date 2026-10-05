@@ -1,13 +1,37 @@
-# butcher-shop
+Butcher Shop
+============
 
-Welcome to Butcher-Shop, an online e-commerce platform for meat lovers!
+An early full stack project (2022): an online shop for a butcher in plain PHP and MySQL, with a cart, checkout and an admin panel. Kept here to show where I started; my current work is in the newer repositories on my profile.
 
-Built using PHP, JS, CSS 3, HTML 5, and MySQL, Butcher-Shop is designed to provide customers with an easy and seamless shopping experience for all their meat-related needs.
+What it does
+------------
 
-With a user-friendly interface and advanced search and filtering options, customers can easily browse through our wide range of products and add them to their carts for quick and secure checkout. Our platform also features real-time inventory management, so customers can be sure that the products they see on the website are available for purchase.
+**For customers**
 
-Butcher-Shop also includes a secure payment gateway integration, ensuring that all transactions are safe and protected. Our website is also optimized for mobile devices, so customers can easily shop on-the-go.
+* Browse products by category and brand, and search
+* Register, log in and keep a cart
+* Check out through PayPal (sandbox) and see past orders
 
-In addition, Butcher-Shop comes with a comprehensive admin panel, allowing the store owner to manage orders, products, customers, and sales data easily. Store owners can also set up discounts and promotions, manage inventory, and track shipping and delivery status.
+**For the admin** (`admin/`)
 
-We believe in providing our customers with the best possible shopping experience, and we are confident that Butcher-Shop will exceed your expectations. Thank you for choosing Butcher-Shop for all your meat needs!
+* Add, edit and remove products, categories and brands
+* See customers and their orders, with a small dashboard
+
+Built with
+----------
+
+PHP, MySQL, JavaScript, jQuery and Bootstrap.
+
+Run it
+------
+
+1. Create a MySQL database called `ecommerce` and import `ecommerce.sql`.
+2. Set the database details in `db.php` and `admin/classes/Database.php`.
+3. Serve the folder with PHP, for example `php -S localhost:8000`.
+
+The demo admin login is in `config/01 LOGIN DETAILS & PROJECT INFO.txt`. Use it only on your own computer.
+
+What I would do differently today
+---------------------------------
+
+This was written before I used frameworks and tests. Today I would store passwords with a modern hash (not MD5), use prepared statements for every query, confirm payments with PayPal's server instead of trusting the return page, and add automated tests. My recent projects do all of these.
